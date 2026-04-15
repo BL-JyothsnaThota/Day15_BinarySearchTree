@@ -4,10 +4,24 @@ public class BSTDemo {
 
         MyBinarySearchTree<Integer> bst = new MyBinarySearchTree<>();
 
+        // UC1 nodes
         bst.add(56);
         bst.add(30);
         bst.add(70);
 
-        System.out.println("UC1 Done (56 root, 30 left, 70 right)");
+        // UC2 additional nodes (build full tree)
+        bst.add(22);
+        bst.add(40);
+        bst.add(60);
+        bst.add(95);
+        bst.add(11);
+        bst.add(65);
+        bst.add(3);
+        bst.add(16);
+        bst.add(63);
+        bst.add(67);
+
+        // ✅ Verify size
+        System.out.println("Size of BST: " + bst.size());
     }
 }
