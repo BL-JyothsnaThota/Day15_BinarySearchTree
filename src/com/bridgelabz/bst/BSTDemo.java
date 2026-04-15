@@ -4,12 +4,10 @@ public class BSTDemo {
 
         MyBinarySearchTree<Integer> bst = new MyBinarySearchTree<>();
 
-        // UC1 nodes
+        // UC1 + UC2 data
         bst.add(56);
         bst.add(30);
         bst.add(70);
-
-        // UC2 additional nodes (build full tree)
         bst.add(22);
         bst.add(40);
         bst.add(60);
@@ -21,7 +19,12 @@ public class BSTDemo {
         bst.add(63);
         bst.add(67);
 
-        // ✅ Verify size
         System.out.println("Size of BST: " + bst.size());
+
+        // ✅ UC3 → Search
+        int searchKey = 63;
+        boolean found = bst.search(searchKey);
+
+        System.out.println("Is " + searchKey + " present? " + found);
     }
 }
